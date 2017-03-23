@@ -308,4 +308,17 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('nav .container > ul > li').each(function() {
+        if ($(this).find('ul').length > 0) {
+            $(this).addClass('with-submenu');
+        }
+    });
+
+    $('nav .container > ul > li > a').click(function(e) {
+        if ($(window).width() < 1240 && $(this).parent().hasClass('with-submenu')) {
+            $(this).parent().toggleClass('open');
+            e.preventDefault();
+        }
+    });
+
 });
