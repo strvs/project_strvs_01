@@ -189,11 +189,11 @@ nav .container > ul > li > a {color:#fff; text-decoration:none; display:block; p
 nav .container > ul > li.active > a,
 nav .container > ul > li:hover > a {color:#fff; background-position:left -47px}
 @media screen and (min-width:1240px) {
-    nav .container > ul > li > ul {display:none; margin:0; padding:3px 0 20px 0; list-style:none; min-width:100%; white-space:nowrap; position:absolute; z-index:99; left:1px; top:100%; background:#4646ec; text-transform:uppercase; font-weight:normal; line-height:2.43em}
+    nav .container > ul > li > ul {display:none; margin:0; padding:3px 0 20px 0; list-style:none; width:200%; position:absolute; z-index:99; left:1px; top:100%; background:#4646ec; text-transform:uppercase; font-weight:normal; line-height:1.43em}
     nav .container > ul > li:hover > ul {display:block}
     nav .container > ul > li > ul > li {margin:0; padding:0}
     nav .container > ul > li > ul > li:before {display:none}
-    nav .container > ul > li > ul > li > a {display:block; text-decoration:none; color:#fff; padding:0 38px; text-align:left}
+    nav .container > ul > li > ul > li > a {display:block; text-decoration:none; color:#fff; padding:.5em 38px; text-align:left}
     nav .container > ul > li > ul > li > a:hover {background:#5353eb}
 }
 
@@ -210,7 +210,7 @@ nav .container > ul > li:hover > a {color:#fff; background-position:left -47px}
     .mobile-menu-open nav .container > ul > li.with-submenu.open > a:after {background-position:left -5px}
     .mobile-menu-open nav .container > ul > li.with-submenu.open {background:#3434b9}
     .mobile-menu-open nav .container > ul > li.with-submenu.open > a {background:#3434b9; margin:0 -20px; padding:0 20px}
-    .mobile-menu-open nav .container > ul > li.with-submenu > ul {display:none; margin:0 -20px; padding:0 20px 3px 20px; background:#3434b9; list-style:none; font-weight:normal; font-size:.875em; line-height:1.5em}
+    .mobile-menu-open nav .container > ul > li.with-submenu > ul {display:none; margin:0 -20px; padding:0 20px 3px 20px; width:auto; background:#3434b9; list-style:none; font-weight:normal; font-size:.875em; line-height:1.5em}
     .mobile-menu-open nav .container > ul > li.with-submenu.open > ul {display:block}
     .mobile-menu-open nav .container > ul > li.with-submenu > ul > li {margin:0; padding:0; border-top:1px solid #7171ce}
     .mobile-menu-open nav .container > ul > li.with-submenu > ul > li:before {display:none}
@@ -604,6 +604,7 @@ footer {height:12.7857em; background:#1b1b33; position:relative; margin-top:-12.
 
 .white a {color:#000 !important}
 .white * {color:#000 !important}
+.white nav a {color:#fff !important}
 .white {background-color:#fff !important; color:#000 !important}
 .white .btn {background-color:#000 !important; color:#fff !important}
 
@@ -614,6 +615,7 @@ footer {height:12.7857em; background:#1b1b33; position:relative; margin-top:-12.
 
 .blue a {color:#063462 !important}
 .blue * {color:#063462 !important}
+.blue nav a {color:#fff !important}
 .blue {background-color:#9dd1ff !important; color:#063462 !important}
 .blue .btn {background-color:#063462 !important; color:#9dd1ff !important}
 
@@ -651,7 +653,7 @@ footer {height:12.7857em; background:#1b1b33; position:relative; margin-top:-12.
 .special footer {background:none}
 .special .footer-menu {display:none}
 
-.special .slider {display:none}
+.special .slider * {color:#fff !important}
 
 .special .main-sections {background:none !important}
 .special .main-sections:after,
